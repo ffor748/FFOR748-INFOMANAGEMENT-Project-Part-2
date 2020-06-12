@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.background{
+  background-color: lightblue;
+  opacity: 1;
+
+}
+
+.visionstatement{
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.bodytext{
+  font-size: 16px;
+  font-family: serif;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#TypesOfExchange {
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#TypesOfExchange li a {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+#TypesOfExchange li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+
+.more {display: none;}
